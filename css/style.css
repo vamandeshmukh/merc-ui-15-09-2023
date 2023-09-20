@@ -5,15 +5,18 @@
     height: 100px;
     padding: 20px;
     border: 2px solid blue;
+    border-radius: 10px;
     background-color: beige;
 }
 
 .web-style:hover {
+    /* visibility: hidden; */
+    /* display: none; */
     font-family: 'Times New Roman', Times, serif;
-    width: 600px;
+    /* width: 600px;
     height: 150px;
     padding: 20px;
-    border: 2px solid blue;
+    border: 2px solid blue; */
     background-color: aquamarine;
 }
 

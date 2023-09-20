@@ -6,8 +6,46 @@
 </head>
 
 <body>
+
     <div>
+        <canvas id="sample-canvas" width="200" height="200" style="border: 2px blue"></canvas>
+    </div>
+
+
+    <div>
+
         <h1>CSS in HTML</h1>
+
+        <p class="web-style">CSS is used to style HTML. web CSS is used to style HTML. web CSS is used to style HTML.
+            web CSS is used to style HTML. web CSS is used to style HTML. web CSS is used to style HTML. web </p>
+        <p class="web-style-2">CSS is used to style HTML. web</p>
+    </div>
+
+    <script>
+        let can = document.getElementById('sample-canvas');
+        let ctx = can.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+</head>
+
+<body>
+    <div>
+
+         <h1>CSS in HTML</h1>
+
         <p class="web-style">CSS is used to style HTML. web CSS is used to style HTML. web CSS is used to style HTML.
             web CSS is used to style HTML. web CSS is used to style HTML. web CSS is used to style HTML. web </p>
         <p class="web-style-2">CSS is used to style HTML. web</p>
@@ -15,7 +53,7 @@
 
 </body>
 
-</html>
+</html> -->
 
 <!-- <!DOCTYPE html>
 <html>
