@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <video width="320" height="240">
+        <source src="movie.mp4">
+    </video>
+
+    <div>
+        <details>This is some stuff
+            <summary>This</summary>
+        </details>
+    </div>
+
+
+    <div>
+        <form action="#">
+            <input type="text" id="in1" onchange="fun1()">
+            <input type="text" id="in2" oninput="fun2()">
+        </form>
+    </div>
+    <script>
+        function fun1() {
+            console.log(document.getElementById('in1'));
+        }
+        function fun2() {
+            console.log(document.getElementById('in2'));
+        }
+    </script>
+
+</body>
+
+</html>
