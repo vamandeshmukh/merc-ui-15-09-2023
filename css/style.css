@@ -1,3 +1,32 @@
+.web-style {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    width: 500px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: beige;
+}
 
- /* styles here  */
+.web-style:hover {
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: aquamarine;
+}
 
+.web-style-2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+}
+
+/* .print-style {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.code-style {
+    font-family: 'Courier New', Courier, monospace;
+} */
