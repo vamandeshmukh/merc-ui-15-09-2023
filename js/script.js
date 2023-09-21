@@ -158,7 +158,7 @@ console.log();
 // addNums(10, 20); // 30 
 // addNums(10, 20, 30); // 
 
-// Function hoisting 
+// // Function hoisting 
 
 // fun(); // works 
 
@@ -166,10 +166,10 @@ console.log();
 //     console.log('fun called');
 // };
 
-// fun(); // error
+// fun2(); // error
 
-// const fun = () => {
-//     console.log('fun called');
+// const fun2 = () => {
+//     console.log('fun2 called');
 // };
 
 // Variable hoisting 
@@ -283,6 +283,7 @@ console.log();
 // const num = 11;
 // const result = num == 10 ? 'yes' : 'no';
 // console.log(result);
+
 
 
 
