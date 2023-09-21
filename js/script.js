@@ -26,12 +26,37 @@ console.log();
 // int num = 10;
 
 // JS 
-let num = 10;
-const num2 = 20;
+// let num = false;
+// const num2 = 20;
 
-console.log(num);
-console.log(num2);
+// console.log(num);
+// console.log(num2);
 
+// Datatypes in JS 
+// primitive types - number, boolean, string 
+// reference types - array, obejct, function, class, ... 
 
+let someVar;
+console.log(someVar);
+console.log(typeof (someVar));
 
+someVar = 10;
+console.log(someVar);
+console.log(typeof (someVar));
+
+someVar = 20;
+console.log(someVar);
+console.log(typeof (someVar));
+
+someVar = 'abc';
+console.log(someVar);
+console.log(typeof (someVar));
+
+someVar = false;
+console.log(someVar);
+console.log(typeof (someVar));
+
+someVar = 30;
+console.log(someVar);
+console.log(typeof (someVar));
 
