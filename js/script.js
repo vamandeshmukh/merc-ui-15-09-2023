@@ -110,7 +110,7 @@ console.log();
 // console.log(myArray);
 // console.log(myArray[0]);
 
-// Objects in JS 
+// // Object in JS 
 // const empData = {
 //     eid: 101,
 //     firstName: 'Sonu',
@@ -126,4 +126,35 @@ console.log();
 // // console.log(empData);
 // console.log(empData.firstName);
 // console.log(empData.address.city);
+
+
+// Functions in JS 
+// function, method, hook, routine, subroutine, ... 
+
+// Old JS function 
+// function fun2 () {};
+
+// function myFunction() {
+//     console.log('myFunction called');
+// };
+
+// myFunction();
+
+// Modern JS arrow function 
+// const fun = () => {};
+
+// const fun = () => {
+//     console.log('fun called');
+//  };
+
+//  fun();
+
+// const addNums = (a, b) => {
+//     console.log(a + b);
+// };
+
+// addNums(); // 
+// addNums(10); // 
+// addNums(10, 20); // 30 
+// addNums(10, 20, 30); // 
 
