@@ -72,17 +72,58 @@ console.log();
 
 // string literals in JS 
 
-let firstName = 'Sonu';
-// let firstName = "Sonu";
-// let firstName = `Sonu`;
+// let firstName = 'Sonu';
+// // let firstName = "Sonu";
+// // let firstName = `Sonu`;
 
-let message = 'Hi ' + firstName + '!';
-let message2 = `Hi ${firstName}!`;
+// let message = 'Hi ' + firstName + '!';
+// let message2 = `Hi ${firstName}!`;
 
-console.log(message);
+// console.log(message);
+
+// Operators in JS 
+
+// console.log(10 + 20);
+// console.log(10 - 20);
+// console.log(10 / 20);
+// console.log(10 * 20);
+// console.log(10 % 3);
+
+// == !=  > >= < <= 
+// === !== 
+
+// console.log(10 == '10');
+// console.log(10 === '10');
+
+// console.log('10' + 5);
+// console.log(10 + '5');
+// console.log('10' - 5);
+// console.log(10 - '5');
+// console.log(10 + 'a');
+// console.log(10 - 'a');
 
 
+// Array in JS 
 
+// const myArray = [10, 'abc', false];
 
+// console.log(myArray);
+// console.log(myArray[0]);
 
+// Objects in JS 
+// const empData = {
+//     eid: 101,
+//     firstName: 'Sonu',
+//     isMarried: false,
+//     phones: [9876, 6789],
+//     address: {
+//         city: 'Hyderabad',
+//         pin: 500001
+//     },
+//     bio: '@sonu123'
+// };
+
+// // console.log(empData);
+// console.log(empData.firstName);
+// console.log(empData.address.city);
 
