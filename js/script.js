@@ -284,6 +284,22 @@ console.log();
 // const result = num == 10 ? 'yes' : 'no';
 // console.log(result);
 
+// let a = 10;
+// let b = 20;
+// let c = 30;
+
+// let x = 10, y = 20, z = 30;
+
+// const arr = [10, 20, 30];
+
+// const [p, q, r] = arr;
+
+// console.log(a, b, c);
+
+
+
+
+
 
 
 
