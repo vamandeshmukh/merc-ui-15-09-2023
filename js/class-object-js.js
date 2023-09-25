@@ -11,40 +11,66 @@
 
 // console.log(empData.firstName);
 
+// class Employee {
+
+//     // fields 
+//     eid;
+//     firstName;
+//     salary;
+
+//     // constructor 
+//     constructor(eid, firstName, salary) {
+//         this.eid = eid;
+//         this.firstName = firstName;
+//         this.salary = salary;
+//     }
+
+//     // methods
+//     printFirstName = () => {
+//         console.log(this.firstName);
+//     };
+
+// }
+
+// // Java 
+// // Employee emp = new Employee();
+
+// // JS 
+// const emp = new Employee();
+// const emp2 = new Employee(101, 'Sonu', 90000);
+// console.log(emp);
+// console.log(emp2);
+// emp2.printFirstName();
+
+// Inheritance in JS 
+
 class Employee {
 
-    // fields 
     eid;
     firstName;
     salary;
 
-    // constructor 
     constructor(eid, firstName, salary) {
         this.eid = eid;
         this.firstName = firstName;
         this.salary = salary;
     }
 
-    // methods
-    printFirstName = () => {
-        console.log(this.firstName);
+    work = () => {
+        console.log(`${this.firstName} works.`);
     };
 
 }
 
-// Java 
-// Employee emp = new Employee();
+class ContractualEmployee extends Employee {
 
-// JS 
-const emp = new Employee();
-const emp2 = new Employee(101, 'Sonu', 90000);
-console.log(emp);
-console.log(emp2);
-emp2.printFirstName();
+    constructor(eid, firstName, salary) {
+        super(eid, firstName, salary);
+    }
 
+}
 
+const emp = new ContractualEmployee(101, 'Sonu', 90000);
 
-
-
-
+emp.work();
 
