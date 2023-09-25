@@ -79,24 +79,54 @@
 // });
 
 
-// ---------------------------
-// Solution 2 - use Promise   
-// ---------------------------
+// // ---------------------------
+// // Solution 2 - use Promise   
+// // ---------------------------
 
-// Promise - pending, resolve, reject
+// // Promise - pending, resolve, reject
+
+// const getFun = () => {
+
+//     // return new Promise((resolve, reject) => { });
+
+//     // return new Promise((resolve, reject) => {
+//     //     resolve({ message: 'Have fun!' });
+//     //     reject({ message: 'Something is wrong!' });
+//     // });
+
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let isDataAvailable = false; // false, true 
+//             if (isDataAvailable)
+//                 resolve({ message: 'Have fun!' });
+//             else
+//                 reject({ message: 'Something is wrong!' });
+//         }, 2000);
+//     });
+// };
+
+// // getFun()
+// //     .then()
+// //     .catch();
+
+// // getFun()
+// //     .then(() => { })
+// //     .catch(() => { });
+
+// getFun()
+//     .then((response) => { console.log(response.message); })
+//     .catch((error) => { console.log(error.message) });
+
+
+// -----------------------------
+// Solution 3 - use async await    
+// -----------------------------
 
 const getFun = () => {
 
-    // return new Promise((resolve, reject) => { });
-
-    // return new Promise((resolve, reject) => {
-    //     resolve({ message: 'Have fun!' });
-    //     reject({ message: 'Something is wrong!' });
-    // });
-
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let isDataAvailable = false; // false, true 
+            let isDataAvailable = true; // false, true 
             if (isDataAvailable)
                 resolve({ message: 'Have fun!' });
             else
@@ -105,18 +135,13 @@ const getFun = () => {
     });
 };
 
-// getFun()
-//     .then()
-//     .catch();
+const fetchFun = async () => {
+    const fun = await getFun();
+    // middleware code 
+    return fun;
+};
 
-// getFun()
-//     .then(() => { })
-//     .catch(() => { });
-
-getFun()
-    .then((response) => { console.log(response.message); })
-    .catch((error) => { console.log(error.message) });
-
+fetchFun().then((response) => { console.log(response.message) });
 
 
 
