@@ -22,13 +22,49 @@
 // Function as arguments to another function 
 // In JS, a function can take another function as argument 
 
-const fun = (arg) => {
-    console.log('fun function called');
-    arg();
+// const fun = (arg) => {
+//     console.log('fun function called');
+//     arg();
+// };
+
+// fun(() => { console.log('anonymous function called'); }); // like line 17
+
+// const namedFunction = () => { console.log('named function called') };
+// fun(namedFunction); // like line 20
+
+
+// const fun = (arg) => {
+//     console.log('fun function called');
+//     arg(10);
+// };
+
+// fun((abc) => {
+//     console.log('anonymous function called');
+//     console.log(abc);
+// });
+
+// ---------------------------
+// Problems in asynchronous js 
+// ---------------------------
+
+// const getFun = () => {
+//     return { message: 'Have fun!' };
+// };
+
+// const fun = getFun();
+// console.log(fun.message);
+
+const getFun = () => {
+    setTimeout(() => {
+        return { message: 'Have fun!' };
+    }, 2000);
 };
 
-fun(() => { console.log('anonymous function called'); }); // like line 17
+const fun = getFun();
+console.log(fun.message);
 
-const namedFunction = () => { console.log('named function called') };
-fun(namedFunction); // like line 20
+
+
+
+
 
