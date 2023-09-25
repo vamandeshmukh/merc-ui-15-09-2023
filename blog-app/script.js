@@ -7,8 +7,17 @@ console.log('blog app');
 
 const url = 'https://jsonplaceholder.typicode.com/posts/22';
 
-// fetch()
+fetch(url)
+    .then((resp) => {
+        console.log(resp);
+        return resp.json();
+    })
+    .then((data) => {
+        console.log(data);
+        document.getElementById('blog-title').innerHTML = data.title;
+        document.getElementById('blog-body').innerHTML = data.body;
+    })
+    .catch();
 
-document.getElementById('blog-title').innerHTML = 'Sample Title';
 
 
