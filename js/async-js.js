@@ -43,10 +43,6 @@
 //     console.log(abc);
 // });
 
-// ---------------------------
-// Problems in asynchronous js 
-// ---------------------------
-
 // const getFun = () => {
 //     return { message: 'Have fun!' };
 // };
@@ -54,14 +50,33 @@
 // const fun = getFun();
 // console.log(fun.message);
 
-const getFun = () => {
+
+// ---------------------------
+// Problems in asynchronous js 
+// ---------------------------
+
+// const getFun = () => {
+//     setTimeout(() => {
+//         return { message: 'Have fun!' };
+//     }, 2000);
+// };
+
+// const fun = getFun();
+// console.log(fun.message);
+
+// ---------------------------
+// Solution 1 - use callback  
+// ---------------------------
+
+const getFun = (arg) => {
     setTimeout(() => {
-        return { message: 'Have fun!' };
+        arg({ message: 'Have fun!' });
     }, 2000);
 };
 
-const fun = getFun();
-console.log(fun.message);
+getFun((fun) => {
+    console.log(fun.message);
+});
 
 
 
