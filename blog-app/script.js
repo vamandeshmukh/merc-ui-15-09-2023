@@ -1,10 +1,20 @@
 
 console.log('blog app');
 
+// ===========================================
+// Assignment:
+
+// Create a blogging app using HTML, CSS, JS 
+// pages - 
 // home page - welcome 
 // blogs list 
 // individual blog post 
 // write new blog 
+
+// API guide - 
+// https://jsonplaceholder.typicode.com/guide/ 
+// ===========================================
+
 
 // Fetch data from a service and consume it and render it on HTML page 
 
