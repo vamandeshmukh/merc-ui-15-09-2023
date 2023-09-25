@@ -64,21 +64,58 @@
 // const fun = getFun();
 // console.log(fun.message);
 
+// // ---------------------------
+// // Solution 1 - use callback  
+// // ---------------------------
+
+// const getFun = (arg) => {
+//     setTimeout(() => {
+//         arg({ message: 'Have fun!' });
+//     }, 2000);
+// };
+
+// getFun((fun) => {
+//     console.log(fun.message);
+// });
+
+
 // ---------------------------
-// Solution 1 - use callback  
+// Solution 2 - use Promise   
 // ---------------------------
 
-const getFun = (arg) => {
-    setTimeout(() => {
-        arg({ message: 'Have fun!' });
-    }, 2000);
+// Promise - pending, resolve, reject
+
+const getFun = () => {
+
+    // return new Promise((resolve, reject) => { });
+
+    // return new Promise((resolve, reject) => {
+    //     resolve({ message: 'Have fun!' });
+    //     reject({ message: 'Something is wrong!' });
+    // });
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let isDataAvailable = false; // false, true 
+            if (isDataAvailable)
+                resolve({ message: 'Have fun!' });
+            else
+                reject({ message: 'Something is wrong!' });
+        }, 2000);
+    });
 };
 
-getFun((fun) => {
-    console.log(fun.message);
-});
+// getFun()
+//     .then()
+//     .catch();
 
+// getFun()
+//     .then(() => { })
+//     .catch(() => { });
 
+getFun()
+    .then((response) => { console.log(response.message); })
+    .catch((error) => { console.log(error.message) });
 
 
 
