@@ -27,8 +27,8 @@ const fun = (arg) => {
     arg();
 };
 
-fun(() => { console.log('anonymous function called'); }); // like line 19 
+fun(() => { console.log('anonymous function called'); }); // like line 17
 
 const namedFunction = () => { console.log('named function called') };
-fun(namedFunction); // like line 22
+fun(namedFunction); // like line 20
 
