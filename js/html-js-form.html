@@ -97,9 +97,28 @@
             });
         };
 
-
         const submitRegForm = (regData) => {
+
             console.log(regData.username.value);
+
+            // fetch checkboxes values 
+            let interestsCheckBoxes = document.getElementsByName('interests');
+            let selectedInterests = [];
+            interestsCheckBoxes.forEach((elem) => {
+                if (elem.checked)
+                    selectedInterests.push(elem.value);
+            });
+            console.log(selectedInterests);
+
+            // fetch radio button values 
+            let selectedGender = '';
+            let genderRadioButtons = document.getElementsByName('gender');
+            genderRadioButtons.forEach((elem) => {
+                if (elem.checked)
+                    selectedGender = elem.value;
+            });
+            console.log(selectedGender);
+
             alert(`${regData.username.value} registered successfully!`)
             regData.reset();
             // updateSpecialization();
