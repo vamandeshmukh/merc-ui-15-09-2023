@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <section>
+        <h1>Registration Form</h1>
+        <hr />
+        <form onsubmit="submitRegForm(this); return false;">
+            <input type="text" id="username" placeholder="Username" required>
+            <br />
+            <select id="education" onchange="updateSpecialization()">
+                <option value="">Select education</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Medical">Medical</option>
+                <option value="Science">Science</option>
+            </select>
+            <br />
+            <select id="specilization">
+                <option value="">Select specilization</option>
+            </select>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+
+    </section>
+
+
+    <script>
+
+        const updateSpecialization = () => {
+            const educationDropdown =
+                document.getElementById('education');
+            const specilizationDropdown =
+                document.getElementById('specilization');
+            const selectedEducation = educationDropdown.value;
+            specilizationDropdown.innerHTML = '';
+            let specilizationOptions;
+
+            switch (selectedEducation) {
+                case 'Engineering':
+                    specilizationOptions = ['CSE', 'ECE', 'Mech', 'Civil', 'Other'];
+                    break;
+                case 'Medical':
+                    specilizationOptions = ['MBBS', 'BAMS', 'DBS'];
+                    break;
+                case 'Science':
+                    specilizationOptions = ['Maths', 'Physics', 'Chemistry'];
+                    break;
+                default:
+                    specilizationOptions = [];
+                    break;
+            }
+            specilizationOptions.forEach((specilization) => {
+                const option = document.createElement('option');
+                option.text = specilization;
+                specilizationDropdown.add(option);
+            });
+        };
+
+
+        const submitRegForm = (regData) => {
+            console.log(regData.username.value);
+            alert(`${regData.username.value} registered successfully!`)
+            regData.reset();
+            // updateSpecialization();
+        };
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- Education -> Engg, Medical, Science 
+Specializaiton 
+Engg - CSE< ECE< Mech, Civil
+ Medical 
+ , Science  -->
