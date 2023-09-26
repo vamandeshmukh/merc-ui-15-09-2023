@@ -34,4 +34,15 @@ app.get('', (req, res) => {
     res.send('Welcome to Merc App');
 });
 
+app.get('/about', (req, res) => {
+    console.log('about');
+    res.send('About Merc App');
+});
+
+app.get('/contact', (req, res) => {
+    console.log('contact');
+    res.send('Contact Merc App');
+});
+
+// app.post('', () => { });
 
