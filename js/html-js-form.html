@@ -11,8 +11,43 @@
         <h1>Registration Form</h1>
         <hr />
         <form onsubmit="submitRegForm(this); return false;">
-            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="username">Username</label>
             <br />
+            <input type="text" id="username" required>
+            <br />
+            <h5>Select interests</h5>
+            <label>
+                <input type="checkbox" name="interests" value="music">Music
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" name="interests" value="sports">Sports
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" name="interests" value="movies">Movies
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" name="interests" value="workout">Workout
+            </label>
+            <br />
+            <h5>Select gender</h5>
+            <label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="male">Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other">Other
+            </label>
+            <br>
+            <br>
+
             <select id="education" onchange="updateSpecialization()">
                 <option value="">Select education</option>
                 <option value="Engineering">Engineering</option>
@@ -75,12 +110,3 @@
 </body>
 
 </html>
-
-
-
-
-<!-- Education -> Engg, Medical, Science 
-Specializaiton 
-Engg - CSE< ECE< Mech, Civil
- Medical 
- , Science  -->
