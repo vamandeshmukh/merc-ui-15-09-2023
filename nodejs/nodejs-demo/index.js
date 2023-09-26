@@ -22,7 +22,7 @@ const port = 3000;
 // app.listen(port, () => { });
 
 app.listen(port, () => {
-    console.log(`App is running on ${port}.`);
+    console.log(`App is running on http://localhost:${port}.`);
 });
 
 // app.get(arg1, arg2);
