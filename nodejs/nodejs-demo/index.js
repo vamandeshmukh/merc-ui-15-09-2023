@@ -12,6 +12,9 @@ import { addNums, subNums } from './calc.js';
 const app = express();
 const port = 3000;
 
+// add middleware to extract body from request object 
+app.use(express.json());
+
 app.listen(port, () => {
     console.log(`App is running on http://localhost:${port}`);
 });
@@ -25,6 +28,7 @@ app.get('', (req, res) => {
 });
 
 app.post('/abc', (req, res) => {
+    // code 
     console.log(req.body);
     res.send('Done!');
 });
