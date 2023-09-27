@@ -1,4 +1,4 @@
-
+import cors from 'cors';
 import express from 'express';
 import { blogData } from './blog-data.js';
 
@@ -6,6 +6,7 @@ const app = express();
 const port = 1234;
 
 app.use(express.json());
+app.use(cors({ origin: true, allowedHeaders: true })); // allow this 
 
 app.listen(port, () => {
     // code 
