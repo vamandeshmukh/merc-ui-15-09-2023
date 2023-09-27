@@ -1,21 +1,27 @@
 
-import express from 'express'; // ES module
 // const express = require('express'); // CommonJS module
 
-// const { addNums } = require('./calc');
+import express from 'express'; // ES module
+
+// import object which is default exported 
+import { addNums, subNums } from './calc.js';
+
+// // import object which is default exported 
+// import addNums from './calc.js';
+
 const app = express();
 const port = 3000;
-
 
 app.listen(port, () => {
     console.log(`App is running on http://localhost:${port}`);
 });
 
 app.get('', (req, res) => {
-    // const sum = addNums(10, 20);
+    const sum = addNums(10, 20);
+    const sum2 = subNums(20, 10);
     console.log('welcome');
-    // res.send(`Welcome to Merc App ${sum}`);
-    res.send(`Welcome to Merc App`);
+    res.send(`Welcome to Merc App ${sum} ${sum2}`);
+    // res.send(`Welcome to Merc App`);
 });
 
 app.post('/abc', (req, res) => {
