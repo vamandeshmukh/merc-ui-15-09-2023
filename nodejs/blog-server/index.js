@@ -6,7 +6,9 @@ const app = express();
 const port = 1234;
 
 app.use(express.json());
-app.use(cors({ origin: true, allowedHeaders: true })); // allow this 
+// app.use(cors({ origin: true, allowedHeaders: true })); // allow this 
+app.use(cors()); // allow this 
+app.options('*', cors()); // allow this 
 
 app.listen(port, () => {
     // code 
