@@ -28,9 +28,12 @@ app.get('', (req, res) => {
 });
 
 app.post('/abc', (req, res) => {
-    // code 
-    console.log(req.body);
-    res.send('Done!');
+    const reqBody = req.body;
+    console.log(reqBody);
+    if (reqBody.firstName && reqBody.lastName)
+        res.send(reqBody);
+    else
+        res.send({ error: 'Invalid data!' });
 });
 
 
