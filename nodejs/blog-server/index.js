@@ -25,6 +25,19 @@ app.get('/get-blog-by-id/:blogid', (req, res) => {
         res.status(404).send({ message: `Blog with blgoId ${blogId} not found!` });
 });
 
+app.get('/get-blog-by-title/:title', (req, res) => {
+    const blogTitle = req.params.title;
+    const blog = blogData.find(b => {
+        return b.title.match(blogTitle);
+    });
+    console.log(blog);
+    if (blog)
+        res.status(200).send(blog);
+    else
+        res.status(404).send({ message: `Blog with title ${blogTitle} not found!` });
+});
+
+
 app.get('/get-all-blogs', (req, res) => {
     console.log(blogData.length);
     if (blogData.length > 0)
