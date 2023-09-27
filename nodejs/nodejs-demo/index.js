@@ -38,9 +38,6 @@ app.post('/abc', (req, res) => {
     // res.send({ error: 'Invalid data!' });
 });
 
-
-
-
 // // create a new project -
 // // in the project folder in CMD -
 // // npm init -y
