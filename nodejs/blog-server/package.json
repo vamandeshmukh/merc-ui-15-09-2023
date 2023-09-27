@@ -1,0 +1,22 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "description": "Node and express server for blogging app, Merc, 15 Sep 2023",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "post",
+    "blogpost",
+    "write"
+  ],
+  "author": "Vaman Deshmukh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "type": "module"
+}
