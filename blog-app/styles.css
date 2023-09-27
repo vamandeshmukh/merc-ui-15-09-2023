@@ -1,0 +1,29 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f2f2f2;
+    background-color: #1a1a1a;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #8080ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+nav {
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    box-shadow : #ffffff 5px;
+}

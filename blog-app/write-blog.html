@@ -6,13 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Merc Blog App</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon"
-        href="https://toppng.com/uploads/preview/mercedes-benz-logo-png-transparent-mercedes-benz-logo-vector-11563000960vssrfbiuqu.png">
+    <link rel="icon" type="image/x-icon" href="/assets/mercedes-benz-logo-png-11327.png">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
+
     <section>
         <nav>
             <a href="./index.html">Home</a>
@@ -20,21 +20,25 @@
             <a href="./blog-details.html">Random Blog</a>
             <a href="./write-blog.html">Write</a>
         </nav>
+
         <header>
             <h1>Merc Blog App</h1>
             <p>Mercedes Benz Blogging Application</p>
-            <p></p>
+            <hr />
+
         </header>
         <section>
-            <h2>All Blogs List</h2>
-            <a href="./blog-list.html">Read all Blogs...</a>
-        </section>
-        <section>
-            <h2>Write a blog</h2>
-            <a href="./write-blog.html">Write a blog...</a>
+            <h2>Write a Blog</h2>
+            <form id="write-blog-form" onsubmit="saveBlog(); return false">
+                <input type="text" id="title" placeholder="Enter title">
+                <br>
+                <textarea id="body" cols="30" rows="10" placeholder="Enter body"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
 
-        <script src="./app-navbar-script.js"></script>
+    </section>
 </body>
 
 </html>
