@@ -31,9 +31,11 @@ app.post('/abc', (req, res) => {
     const reqBody = req.body;
     console.log(reqBody);
     if (reqBody.firstName && reqBody.lastName)
-        res.send(reqBody);
+        // res.send(reqBody);
+        res.status(201).json(reqBody);
     else
-        res.send({ error: 'Invalid data!' });
+        res.status(400).json({ error: 'Invalid data!' });
+    // res.send({ error: 'Invalid data!' });
 });
 
 
