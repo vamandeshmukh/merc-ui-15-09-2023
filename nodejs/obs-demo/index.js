@@ -29,23 +29,27 @@
 
 
 
-// callbacks 
+// event loop - callbacks 
 
-console.log('start');
+// console.log('start');
 
-const asyncFun = (arg) => {
-    setTimeout(() => {
-        arg(' async ops completed');
-    }, 2000);
-};
+// const asyncFun = (arg) => {
+//     setTimeout(() => {
+//         arg(' async ops completed');
+//     }, 2000);
+// };
 
-console.log('async ops started');
+// console.log('async ops started');
 
-asyncFun((result) => {
-    console.log(result);
-});
+// asyncFun((result) => {
+//     console.log(result);
+// });
 
-console.log('end');
+// console.log('end');
+
+
+// event loop in node - 
+// read file operations 
 
 
 
