@@ -14,3 +14,4 @@ console.log(salary);
 
 
 // npm install typescript --location=global
+// tsc -v
