@@ -1,0 +1,21 @@
+{
+  "name": "obs-demo",
+  "version": "1.0.0",
+  "description": "RxJS demo for observables",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "post",
+    "blogpost",
+    "write"
+  ],
+  "author": "Vaman Deshmukh",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "type": "module"
+}
