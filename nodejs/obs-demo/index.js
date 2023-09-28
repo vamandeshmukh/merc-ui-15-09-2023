@@ -51,52 +51,83 @@
 // event loop in node - 
 // read file operations 
 
-import fs from 'fs';
+// import fs from 'fs';
 
 
-// const readFileOps = (filePath, () => { } => { });
+// // const readFileOps = (filePath, () => { } => { });
 
-// const readFileOps = ((filepath, () => {}) => {
-//     fs.readFile(filepath, (err, data) => {
+// // const readFileOps = ((filepath, () => {}) => {
+// //     fs.readFile(filepath, (err, data) => {
+// //         if (err)
+
+// //     });
+// // });
+
+// console.log('start');
+
+// const readFileOps = ((filepath, callback) => {
+//     fs.readFile(filepath, 'utf8', (err, data) => {
 //         if (err)
-
+//             callback(err);
+//         else
+//             callback(data);
 //     });
 // });
 
-console.log('start');
+// readFileOps('sample.txt', (err, data) => {
+//     if (err)
+//         console.log(err);
+//     else
+//         console.log(data);
+// });
 
-const readFileOps = ((filepath, callback) => {
-    fs.readFile(filepath, 'utf8', (err, data) => {
+// const dataToWrite = 'some more sample text';
+
+// fs.appendFile('sample.txt', dataToWrite, (err) => {
+//     if (err)
+//         console.log(err);
+//     else
+//         console.log('Done!');
+
+// });
+
+// // fs.appendFile();
+
+// readFileOps('sample.txt', (err, data) => {
+//     if (err)
+//         console.log(err);
+//     else
+//         console.log(data);
+// });
+
+import fs from 'fs';
+
+if (fs.existsSync('D:/VamanPro/Codes/merc/merc-ui-15-09-2023/nodejs/obs-demo/'))
+    console.log('yes');
+else
+    console.log('no');
+
+
+fs.readdir('D:/VamanPro/Codes/merc/merc-ui-15-09-2023/nodejs/obs-demo/',
+    (err, files) => {
         if (err)
-            callback(err);
+            console.log(err);
         else
-            callback(data);
-    });
-});
-
-readFileOps('sample.txt', (err, data) => {
-    if (err)
-        console.log(err);
-    else
-        console.log(data);
-});
-
-const dataToWrite = 'some more sample text';
-
-fs.appendFile('sample.txt', dataToWrite, (err) => {
-    if (err)
-        console.log(err);
-    else
-        console.log('Done!');
-
-});
-
-// fs.appendFile();
+            console.log(files);
+    }
+);
 
 
-readFileOps('sample.txt', (err, data) => {
-    if (err)
-        console.log(err);
-    else
-        console.log(data);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+

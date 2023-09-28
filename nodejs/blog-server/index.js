@@ -51,9 +51,10 @@ app.post('/write-blog', (req, res) => {
     const blogSize = blogData.length;
     const newBlog = { id: blogSize + 1, title: req.body.title, body: req.body.body, writerId: req.body.writerId };
     blogData.push(newBlog);
-    if (blogData.length === blogSize + 1)
+    if (blogData.length === blogSize + 1) {
+        res.set({ message: 'blog published successfully!' }); // headers
         res.status(201).send(newBlog);
-    console.log(blogData);
+    } console.log(blogData);
 });
 
 
