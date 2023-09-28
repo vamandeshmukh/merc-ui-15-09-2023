@@ -7,3 +7,20 @@
 // Run JS 
 // node ts-intro.js 
 console.log('ts intro');
+// const salary: number = 'abc';
+var salary = 10;
+console.log(salary);
+// const addNums = (num, num2) => {
+//     return num + num2;
+// };
+// const addNums = (num: number, num2: number): number => {
+//     return num + num2;
+// };
+// const addNums = (num: number, num2: number): number => {
+//     // return num + num2;
+//     console.log(num + num2);
+// };
+var addNums = function (num, num2) {
+    return 'a string value';
+};
+addNums(10, 20);
