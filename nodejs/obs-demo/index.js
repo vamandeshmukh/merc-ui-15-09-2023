@@ -5,3 +5,6 @@ const myArr = [10, 20, 30, 40, 50];
 
 const arrObs = from(myArr);
 
+arrObs.subscribe((val) => {
+    console.log(val);
+});
