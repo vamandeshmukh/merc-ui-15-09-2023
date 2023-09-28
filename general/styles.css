@@ -1,0 +1,17 @@
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* PascleCase 
+camelCase 
+kebab-case
+snake_case  */
+
+
+.article-heading {
+    color: blue;
+}
+
+.body-text {
+    color: blueviolet;
+}

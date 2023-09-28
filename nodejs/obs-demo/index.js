@@ -107,7 +107,6 @@ if (fs.existsSync('D:/VamanPro/Codes/merc/merc-ui-15-09-2023/nodejs/obs-demo/'))
 else
     console.log('no');
 
-
 fs.readdir('D:/VamanPro/Codes/merc/merc-ui-15-09-2023/nodejs/obs-demo/',
     (err, files) => {
         if (err)
