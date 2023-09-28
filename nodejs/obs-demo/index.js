@@ -51,8 +51,35 @@
 // event loop in node - 
 // read file operations 
 
+import fs from 'fs';
 
 
+// const readFileOps = (filePath, () => { } => { });
+
+// const readFileOps = ((filepath, () => {}) => {
+//     fs.readFile(filepath, (err, data) => {
+//         if (err)
+
+//     });
+// });
+
+console.log('start');
+
+const readFileOps = ((filepath, callback) => {
+    fs.readFile(filepath, 'utf8', (err, data) => {
+        if (err)
+            callback(err);
+        else
+            callback(data);
+    });
+});
+
+readFileOps('sample.txt', (err, data) => {
+    if (err)
+        console.log(err);
+    else
+        console.log(data);
+});
 
 
 
