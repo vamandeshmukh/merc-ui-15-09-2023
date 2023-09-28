@@ -81,7 +81,22 @@ readFileOps('sample.txt', (err, data) => {
         console.log(data);
 });
 
+const dataToWrite = 'some more sample text';
+
+fs.appendFile('sample.txt', dataToWrite, (err) => {
+    if (err)
+        console.log(err);
+    else
+        console.log('Done!');
+
+});
+
+// fs.appendFile();
 
 
-
-
+readFileOps('sample.txt', (err, data) => {
+    if (err)
+        console.log(err);
+    else
+        console.log(data);
+});
