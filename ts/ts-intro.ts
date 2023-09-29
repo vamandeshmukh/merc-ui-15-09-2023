@@ -109,19 +109,54 @@
 // fun();
 
 
-function greet(greeting: string, ...names: string[]) {
-    return greeting + " " + names.join(", ") + "!";
-}
+// function greet(greeting: string, ...names: string[]) {
+//     return greeting + " " + names.join(", ") + "!";
+// }
 
-const m1: string = greet("Hello", "Steve", "Bill"); 	// returns "Hello Steve, Bill!"
-const m2: string = greet("Hello");					// returns "Hello !"
+// const m1: string = greet("Hello", "Steve", "Bill"); 	// returns "Hello Steve, Bill!"
+// const m2: string = greet("Hello");					// returns "Hello !"
 
-console.log(m1);
-console.log(m2);
-
-
+// console.log(m1);
+// console.log(m2);
 
 
+// let numOrStr: number | string;
+
+// let anyVal: any;
+
+// function fun(a: number, b?: number) { };
+
+// function fun2(a: number = 1, b: number = 2) { };
+
+// function fun3(a: number, ...b: number[]) { };
+
+// fun3(10);
+// fun3(10, 20);
+// fun3(10, 20, 30, 40, 50);
+
+// let person: { name: string, age: number } = {
+//     name: 'Hari',
+//     age: 25
+// };
+
+// person = {};			// error - Type '{}' is missing the following properties
+// // from type '{ name: string; age: number; }': name, age 
+
+// person = {			// this works
+//     name: 'Krish',
+//     age: 20
+// };
+
+// person = {			// this works
+//     name: false,
+//     age: 20
+// };
+
+// let num: number;
+
+// num = 10;
+
+// console.log(num);
 
 
 
